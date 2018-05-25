@@ -1,0 +1,22 @@
+.background {
+  height: 100vh;
+  overflow: hidden;
+  background: url('./no-chicago.png') repeat;
+  background-size: auto 100vh;
+  background-position: right top;
+}
+
+.city {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.name {
+  font-size: 12vh;
+  color: white;
+  position: absolute;
+  bottom: 1.8vh;
+  left: 2vw;
+  font-family: 'Cabin';
+}
