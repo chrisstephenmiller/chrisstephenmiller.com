@@ -12,6 +12,11 @@
   flex-grow: 1;
   text-align: center; 
   color: white;
+  transition: transform 1s ease
+}
+
+.name.hidden {
+  transform: translateX(-55vw);
 }
 
 .links {
@@ -19,6 +24,11 @@
   justify-content: space-around;
   align-items: center;
   flex-grow: 5;
+  transition: transform 1s ease
+}
+
+.links.hidden {
+  transform: translateX(55vw)
 }
 
 .links a {

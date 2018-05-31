@@ -10,11 +10,17 @@ const scrollDown = () => {
 }
 
 class Navbar extends Component {
+
+  componentDidMount = () => {
+    setTimeout(() => document.getElementById(`name`).classList.remove(`hidden`), 500)
+    setTimeout(() => document.getElementById(`links`).classList.remove(`hidden`), 500)
+  }
+
   render() {
     return (
       <div className="navbar">
-        <span className="name">chris stephen miller</span>
-        <div className="links">
+        <span id="name" className="name hidden">chris stephen miller</span>
+        <div id="links" className="links hidden">
           {links.map(link => {
             return (
               <NavLink key={link}
