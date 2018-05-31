@@ -1,0 +1,48 @@
+.navbar {
+  position: absolute;
+  top: 28.6vw;
+  display: inline-flex;
+  width: 100%;
+}
+
+.name {
+  left: .5vw;
+  font-size: 6.2vw;
+  text-shadow: .2vw .2vw .2vw black;
+  flex-grow: 1;
+  text-align: center; 
+  color: white;
+}
+
+.links {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 5;
+}
+
+.links a {
+  font-size: 3.3vw;
+  color: white;
+  text-decoration: none;
+}
+
+.about-link:hover, .about-link.selected {
+  color: rgb(255, 136, 0);
+  text-shadow: .2vw .2vw .2vw black;
+}
+
+.code-link:hover, .code-link.selected {
+  color: rgb(94, 255, 0);
+  text-shadow: .2vw .2vw .2vw black;
+}
+
+.music-link:hover, .music-link.selected {
+  color: rgb(0, 183, 255);
+  text-shadow: .2vw .2vw .2vw black;
+}
+
+.contact-link:hover, .contact-link.selected {
+  color: rgb(204, 0, 255);
+  text-shadow: .2vw .2vw .2vw black;
+}

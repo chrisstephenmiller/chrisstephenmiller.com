@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import './App.css';
-
+import './app.css';
+import chicago from './chicago.jpg'
+import Navbar from './navbar';
+import Routes from './routes';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="city">
-          <div className="background">
-            <span className="name">chris stephen miller</span>
-          </div>
+      <Router>
+        <div className="app">
+          <img src={chicago} alt="chicago" className="chicago" />
+          <Navbar />
+          <Routes />
         </div>
-      </div>
+      </Router>
     );
   }
 }
