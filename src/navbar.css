@@ -1,4 +1,4 @@
-.navbar {
+#navbar {
   z-index: 1;
   position: fixed;
   display: inline-flex;
@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.name {
+#name {
   font-size: 60px;
   text-shadow: 2px 2px 2px black;
   text-align: left;
@@ -16,11 +16,11 @@
   transition: transform 1s ease-out
 }
 
-.name.hidden {
+#name.hidden {
   transform: translateX(-615px);
 }
 
-.links {
+#links {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-end;
@@ -28,33 +28,34 @@
   transition: transform 1s ease-out;
 }
 
-.links.hidden {
+#links.hidden {
   transform: translateX(135px)
 }
 
-.links a {
+#links a {
   font-size: 32px;
   color: white;
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
+  transition: all .15s ease-out;
 }
 
-.links a:hover, a.selected {
+#links a:hover, a.selected {
   text-shadow: 2px 2px 2px black;
 }
 
-.about-link:hover, .about-link.selected {
+#about-link:hover, #about-link.selected {
   color: rgb(255, 136, 0);
 }
 
-.code-link:hover, .code-link.selected {
+#code-link:hover, #code-link.selected {
   color: rgb(94, 255, 0);
 }
 
-.music-link:hover, .music-link.selected {
+#music-link:hover, #music-link.selected {
   color: rgb(0, 183, 255);
 }
 
-.contact-link:hover, .contact-link.selected {
+#contact-link:hover, #contact-link.selected {
   color: rgb(204, 0, 255);
 }
