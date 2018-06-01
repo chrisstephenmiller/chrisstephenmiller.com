@@ -12,6 +12,7 @@
   text-align: left;
   margin-left: 20px;
   color: white;
+  text-decoration: none;
   transition: transform 1s ease-out
 }
 
@@ -39,7 +40,7 @@
 }
 
 .links a:hover, a.selected {
-  text-shadow: 3px 3px 3px black;
+  text-shadow: 2px 2px 2px black;
 }
 
 .about-link:hover, .about-link.selected {

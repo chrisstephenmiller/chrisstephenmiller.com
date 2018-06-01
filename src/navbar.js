@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const links = [`about`, `code`, `music`, `contact`]
 
 const scrollDown = idx => {
-  const scroll = window.innerWidth * (idx + 1)
+  const scroll = window.innerHeight * (idx + 1)
   window.scrollTo({ top: scroll, left: 0, behavior: `smooth` })
 }
 

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './routes.css'
 
-class About extends Component {
+class Music extends Component {
   render() {
     return (
-      <div className="about route">
+      <div className="music route">
       </div>
     );
   }
 }
 
-export default About;
+export default Music;

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './routes.css'
 
-class About extends Component {
+class Contact extends Component {
   render() {
     return (
-      <div className="about route">
+      <div className="contact route">
       </div>
     );
   }
 }
 
-export default About;
+export default Contact;

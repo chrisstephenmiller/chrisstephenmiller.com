@@ -6,7 +6,6 @@
   position: absolute;
   right: 0;
   display: block;
-  filter: blur(1px);
   height: 100vh;
   min-height: 540px;
 }
