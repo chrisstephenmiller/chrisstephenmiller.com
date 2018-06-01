@@ -1,58 +1,59 @@
 .navbar {
-  position: absolute;
-  top: 28.6vw;
+  z-index: 1;
+  position: fixed;
   display: inline-flex;
+  justify-content: space-between;
   width: 100%;
 }
 
 .name {
-  left: .5vw;
-  font-size: 6.2vw;
-  text-shadow: .2vw .2vw .2vw black;
-  flex-grow: 1;
-  text-align: center; 
+  font-size: 60px;
+  text-shadow: 2px 2px 2px black;
+  text-align: left;
+  margin-left: 20px;
   color: white;
-  transition: transform 1s ease
+  transition: transform 1s ease-out
 }
 
 .name.hidden {
-  transform: translateX(-55vw);
+  transform: translateX(-615px);
 }
 
 .links {
   display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-grow: 5;
-  transition: transform 1s ease
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10px 20px;
+  transition: transform 1s ease-out;
 }
 
 .links.hidden {
-  transform: translateX(55vw)
+  transform: translateX(135px)
 }
 
 .links a {
-  font-size: 3.3vw;
+  font-size: 32px;
   color: white;
   text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+}
+
+.links a:hover, a.selected {
+  text-shadow: 3px 3px 3px black;
 }
 
 .about-link:hover, .about-link.selected {
   color: rgb(255, 136, 0);
-  text-shadow: .2vw .2vw .2vw black;
 }
 
 .code-link:hover, .code-link.selected {
   color: rgb(94, 255, 0);
-  text-shadow: .2vw .2vw .2vw black;
 }
 
 .music-link:hover, .music-link.selected {
   color: rgb(0, 183, 255);
-  text-shadow: .2vw .2vw .2vw black;
 }
 
 .contact-link:hover, .contact-link.selected {
   color: rgb(204, 0, 255);
-  text-shadow: .2vw .2vw .2vw black;
 }

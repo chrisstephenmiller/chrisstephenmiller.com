@@ -1,5 +1,6 @@
 .routes {
   position: absolute;
-  top: 36vw;
-  height: calc(100vh - 6.6vw);
+  top: 100vh;
+  height: 400vh;
+  width: 100%;
 }

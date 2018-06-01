@@ -5,7 +5,6 @@ class About extends Component {
   render() {
     return (
       <div className="about-route">
-      ABOUT
       </div>
     );
   }

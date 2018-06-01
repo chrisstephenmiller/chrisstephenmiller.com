@@ -5,7 +5,8 @@
 .chicago {
   position: absolute;
   right: 0;
-  width: 100%;
   display: block;
   filter: blur(1px);
+  height: 100vh;
+  min-height: 540px;
 }
