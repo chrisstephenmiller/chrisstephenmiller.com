@@ -4,37 +4,26 @@ import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
 const links = [`about`, `code`, `music`, `contact`]
-let sections = []
 
 class Navbar extends Component {
 
   componentDidMount = () => {
-
-    const flyIns = [`name`, `links`].map(e => document.getElementById(e).classList)
-    if (this.props.history.location.pathname === `/`) flyIns.forEach(e => e.add(`hidden`))
-    flyIns.forEach(e => setTimeout(() => e.remove(`hidden`), 500))
-
-    sections = links.map(e => document.getElementById(`${e}-link`).classList)
-
-    window.addEventListener(`scroll`, () => this.scrollTracker())
+    setTimeout(() => document.getElementById(`navbar`).classList.remove(`hidden`), 500)
+    this.sections = links.map(e => document.getElementById(`${e}-link`).classList)
+    window.addEventListener(`scroll`, () => this.sectionScroller())
   }
 
-  scrollTracker = () => {
-    const scrollPosition = window.scrollY
-    const section = window.innerHeight
-    sections.forEach((e, idx)=> {
-      const lower = section * (idx + 1) - (38 * idx + 45)
-      const upper = section * (idx + 2) - (38 * (idx + 1) + 7)
-      scrollPosition >= lower && scrollPosition < upper ? e.add(`active`) : e.remove(`active`)
+  sectionScroller = () => {
+    this.sections.forEach((e, idx)=> {
+      const lower = window.innerHeight * (idx + 1) - (38 * idx + 45)
+      const upper = window.innerHeight * (idx + 2) - (38 * (idx + 1) + 7)
+      window.scrollY >= lower && window.scrollY < upper ? e.add(`active`) : e.remove(`active`)
     })
   }
 
   render() {
-
     return (
-      <div id="navbar">
-        <span id="name">chris stephen miller</span>
-        <div id="links">
+      <div id="navbar" className="hidden">
           {links.map((link, idx) => {
             return (
               <Link key={link}
@@ -45,7 +34,6 @@ class Navbar extends Component {
               </Link>
             )
           })}
-        </div>
       </div>
     );
   }

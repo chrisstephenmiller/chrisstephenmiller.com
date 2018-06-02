@@ -1,38 +1,20 @@
 #navbar {
   z-index: 1;
   position: fixed;
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-#name {
-  font-size: 5vw;
-  text-shadow: 2px 2px 2px black;
-  text-align: left;
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
-  transition: transform 1s ease-out
-}
-
-#name.hidden {
-  transform: translateX(-615px);
-}
-
-#links {
+  right: 10px;
   display: inline-flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
-  margin: 10px 20px;
   transition: transform 1s ease-out;
+  margin: 10px;
 }
 
-#links.hidden {
+#navbar.hidden {
   transform: translateX(135px)
 }
 
-#links a {
+#navbar a {
   font-size: 32px;
   color: white;
   text-decoration: none;
@@ -40,7 +22,7 @@
   transition: all .15s ease-out;
 }
 
-#links a:hover, a.active {
+#navbar a:hover, a.active {
   text-shadow: 2px 2px 2px black;
 }
 

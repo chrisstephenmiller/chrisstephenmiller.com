@@ -1,0 +1,14 @@
+#name {
+  position: fixed;
+  z-index: 1;
+  font-size: 80px;
+  text-shadow: 2px 2px 2px black;
+  text-align: left;
+  left: 20px;
+  color: white;
+  transition: transform 1s ease-out
+}
+
+#name.hidden {
+  transform: translateX(-680px);
+}

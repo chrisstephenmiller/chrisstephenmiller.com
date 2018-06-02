@@ -12,7 +12,7 @@ class Routes extends Component {
     const links = [`about`, `code`, `music`, `contact`]
     const section = this.props.history.location.pathname.slice(1)
     const idx = links.indexOf(section)
-    this.props.scrollTo(idx)
+    if (idx > -1) this.props.scrollTo(idx)
   }
 
   render() {

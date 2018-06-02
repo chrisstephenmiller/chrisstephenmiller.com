@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
 import Background from './background'
+import Title from './title'
 import Navbar from './navbar';
 import Routes from './routes';
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -16,6 +17,7 @@ class App extends Component {
       <Router>
         <div className="app">
           <Background />
+          <Title />
           <Navbar scrollTo={scrollTo} />
           <Routes scrollTo={scrollTo} />
         </div>

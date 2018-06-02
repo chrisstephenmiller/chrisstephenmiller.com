@@ -5,7 +5,7 @@ class Music extends Component {
   render() {
     return (
       <div className="music route">
-        <span>This is where I write about music.</span>
+        <span className="title text">This is where I write about music.</span>
       </div>
     );
   }
