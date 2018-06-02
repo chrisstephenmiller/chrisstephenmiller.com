@@ -1,7 +1,6 @@
 .routes {
   position: absolute;
   top: 100vh;
-  height: 400vh;
   width: 100%;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .detail {
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .about.route {
