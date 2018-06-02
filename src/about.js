@@ -5,6 +5,7 @@ class About extends Component {
   render() {
     return (
       <div className="about route">
+        <span>This is where I write about myself.</span>
       </div>
     );
   }

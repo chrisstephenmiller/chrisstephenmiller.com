@@ -5,6 +5,7 @@ class Code extends Component {
   render() {
     return (
       <div className="code route">
+        <span>This is where I write about code.</span>
       </div>
     );
   }
