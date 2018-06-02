@@ -23,9 +23,9 @@ class Navbar extends Component {
     const scrollPosition = window.scrollY
     const section = window.innerHeight
     sections.forEach((e, idx)=> {
-      const lower = section * (idx + 1) - (40 * idx + 15)
-      const upper = section * (idx + 2) - (40 * (idx + 1) + 15)
-      scrollPosition >= lower && scrollPosition < upper ? e.add(`test`) : e.remove(`test`)
+      const lower = section * (idx + 1) - (38 * idx + 45)
+      const upper = section * (idx + 2) - (38 * (idx + 1) + 7)
+      scrollPosition >= lower && scrollPosition < upper ? e.add(`active`) : e.remove(`active`)
     })
   }
 

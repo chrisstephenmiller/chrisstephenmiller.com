@@ -5,9 +5,9 @@ import Navbar from './navbar';
 import Routes from './routes';
 import { BrowserRouter as Router } from 'react-router-dom'
 
-const scrollTo = idx => {
-  const scroll = window.innerHeight * (idx + 1)
-  window.scrollTo({ top: scroll, left: 0, behavior: `smooth` })
+const scrollTo = section => {
+  const scroll = window.innerHeight * (section + 1)
+  window.scrollTo({ top: scroll, behavior: `smooth` })
 }
 
 class App extends Component {

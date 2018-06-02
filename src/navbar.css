@@ -40,22 +40,22 @@
   transition: all .15s ease-out;
 }
 
-#links a:hover, a.selected {
+#links a:hover, a.active {
   text-shadow: 2px 2px 2px black;
 }
 
-#about-link:hover, #about-link.test {
-  color: rgb(255, 136, 0);
-}
-
-#code-link:hover, #code-link.test {
-  color: rgb(94, 255, 0);
-}
-
-#music-link:hover, #music-link.test {
+#about-link:hover, #about-link.active {
   color: rgb(0, 183, 255);
 }
 
-#contact-link:hover, #contact-link.test {
+#code-link:hover, #code-link.active {
+  color: rgb(255, 136, 0);
+}
+
+#music-link:hover, #music-link.active {
+  color: rgb(94, 255, 0);
+}
+
+#contact-link:hover, #contact-link.active {
   color: rgb(204, 0, 255);
 }
