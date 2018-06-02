@@ -4,37 +4,33 @@ import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
 const links = [`about`, `code`, `music`, `contact`]
-let linkClasses = []
+let sections = []
 
 class Navbar extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      scrollPosition: 0
-    }
-  }
 
   componentDidMount = () => {
+
     const flyIns = [`name`, `links`].map(e => document.getElementById(e).classList)
     if (this.props.history.location.pathname === `/`) flyIns.forEach(e => e.add(`hidden`))
     flyIns.forEach(e => setTimeout(() => e.remove(`hidden`), 500))
-    window.addEventListener(`scroll`, () => this.setState({ scrollPosition: window.scrollY }))
-    linkClasses = links.map(e => document.getElementById(`${e}-link`).classList)
+
+    sections = links.map(e => document.getElementById(`${e}-link`).classList)
+
+    window.addEventListener(`scroll`, () => this.scrollTracker())
   }
 
   scrollTracker = () => {
-    const { scrollPosition } = this.state
+    const scrollPosition = window.scrollY
     const section = window.innerHeight
-    linkClasses.forEach((e, idx)=> {
+    sections.forEach((e, idx)=> {
       const lower = section * (idx + 1) - (40 * idx + 15)
       const upper = section * (idx + 2) - (40 * (idx + 1) + 15)
-      scrollPosition >= lower && scrollPosition < upper ? e.add(`selected`) : e.remove(`selected`)
+      scrollPosition >= lower && scrollPosition < upper ? e.add(`test`) : e.remove(`test`)
     })
   }
 
   render() {
-    this.scrollTracker()
+
     return (
       <div id="navbar">
         <span id="name">chris stephen miller</span>

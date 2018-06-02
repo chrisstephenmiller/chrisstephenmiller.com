@@ -7,7 +7,7 @@
 }
 
 #name {
-  font-size: 60px;
+  font-size: 5vw;
   text-shadow: 2px 2px 2px black;
   text-align: left;
   margin-left: 20px;
@@ -44,18 +44,18 @@
   text-shadow: 2px 2px 2px black;
 }
 
-#about-link:hover, #about-link.selected {
+#about-link:hover, #about-link.test {
   color: rgb(255, 136, 0);
 }
 
-#code-link:hover, #code-link.selected {
+#code-link:hover, #code-link.test {
   color: rgb(94, 255, 0);
 }
 
-#music-link:hover, #music-link.selected {
+#music-link:hover, #music-link.test {
   color: rgb(0, 183, 255);
 }
 
-#contact-link:hover, #contact-link.selected {
+#contact-link:hover, #contact-link.test {
   color: rgb(204, 0, 255);
 }
