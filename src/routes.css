@@ -13,6 +13,13 @@
   text-align: center;
 }
 
+#iframe {
+  z-index: 1;
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
 .text {
   color: white;
   margin: 20px 160px;
