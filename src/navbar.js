@@ -15,8 +15,8 @@ class Navbar extends Component {
 
   sectionScroller = () => {
     this.sections.forEach((e, idx)=> {
-      const lower = window.innerHeight * (idx + 1) - (38 * idx + 45)
-      const upper = window.innerHeight * (idx + 2) - (38 * (idx + 1) + 7)
+      const lower = window.innerHeight * (idx + 1) - (29 * idx + 35)
+      const upper = window.innerHeight * (idx + 2) - (29 * (idx + 1) + 5)
       window.scrollY >= lower && window.scrollY < upper ? e.add(`active`) : e.remove(`active`)
     })
   }

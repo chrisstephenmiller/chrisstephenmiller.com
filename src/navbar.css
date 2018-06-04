@@ -15,7 +15,7 @@
 }
 
 #navbar a {
-  font-size: 32px;
+  font-size: 24px;
   color: white;
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
@@ -27,17 +27,17 @@
 }
 
 #about-link:hover, #about-link.active {
-  color: rgb(0, 183, 255);
+  color: #009817
 }
 
 #code-link:hover, #code-link.active {
-  color: rgb(255, 136, 0);
+  color: #a90033
 }
 
 #music-link:hover, #music-link.active {
-  color: rgb(94, 255, 0);
+  color: #0059b8
 }
 
 #contact-link:hover, #contact-link.active {
-  color: rgb(204, 0, 255);
+  color: #2c0083
 }

@@ -13,20 +13,6 @@
   text-align: center;
 }
 
-.album {
-  z-index: 1;
-  width: 350px;
-  height: 350px;
-  margin: 10px;
-  box-shadow: 1px 1px 1px black;
-}
-
-.albums {
-  margin: 20px 140px;
-  display: inline-flex;
-  justify-content: space-between;
-}
-
 .text {
   color: white;
   margin: 20px 160px;
@@ -41,17 +27,47 @@
 }
 
 .about.route {
-  background-color: rgb(0, 183, 255);
+  background-color: #579660
 }
 
 .code.route {
-  background-color: rgb(255, 136, 0);
+  background-color: #ad3f60
 }
 
 .music.route {
-  background-color: rgb(94, 255, 0);
+  background-color: #3b76b4
 }
 
 .contact.route {
-  background-color: rgb(204, 0, 255);
+  background-color: #695396;
+}
+
+.albums {
+  z-index: 1;
+  margin: 20px 140px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.album {
+  display: inline-flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.embed {
+  width: 350px;
+  height: 350px;
+  transition: all .2s ease
+}
+
+.embed:hover {
+  box-shadow: 2px 2px 2px black;
+  transition: all .1s ease
+}
+
+.info {
+  color: white;
+  font-size: 24px;
+  margin: 10px;
 }
