@@ -13,11 +13,18 @@
   text-align: center;
 }
 
-#iframe {
+.album {
   z-index: 1;
-  height: 350px;
   width: 350px;
-  margin: 20px;
+  height: 350px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.albums {
+  margin: 20px 140px;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .text {
