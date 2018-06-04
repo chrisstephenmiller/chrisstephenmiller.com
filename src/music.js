@@ -18,7 +18,7 @@ class Music extends Component {
               <div key={album.link} className="album">
                 <iframe
                   title={album.name}
-                  src={`https://bandcamp.com/EmbeddedPlayer/album=${album.link}/size=large/bgcol=ffffff/linkcol=5eff00/minimal=true/`}
+                  src={`https://bandcamp.com/EmbeddedPlayer/album=${album.link}/size=large/bgcol=ffffff/linkcol=0059b8/minimal=true/`}
                   className={`embed ${album.name}`}
                   allow="autoplay"
                   seamless
