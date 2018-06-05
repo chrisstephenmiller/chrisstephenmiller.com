@@ -12,9 +12,9 @@ class Code extends Component {
       <div className="code route">
         <span className="title text">This is where I write about code.</span>
         <div className="projects">
-          <img className="jam-session embed" src={jamSession} />
-          <img className="guitars embed" src={guitars} />
-          <img className="dwellplayd embed" src={dwellplayd} />
+          <img className="jam-session embed" src={jamSession} alt="jam-session"/>
+          <img className="guitars embed" src={guitars} alt="guitars"/>
+          <img className="dwellplayd embed" src={dwellplayd} alt="dwellplayd"/>
         </div>
       </div>
     );

@@ -1,4 +1,4 @@
-.routes {
+#routes {
   position: absolute;
   top: 100vh;
   width: 100%;
@@ -43,7 +43,6 @@
 }
 
 .albums {
-  z-index: 1;
   margin: 20px 140px;
   display: inline-flex;
   justify-content: space-between;

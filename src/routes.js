@@ -6,6 +6,16 @@ import Music from './music';
 import Contact from './contact';
 import { withRouter } from 'react-router'
 
+const filter = () => {
+  const routes = document.getElementById(`routes`)
+  const opacity = () => {
+    const value = window.scrollY / window.innerHeight
+    if (value > .8) return .8
+    return value
+  }
+  routes.setAttribute(`style`, `opacity: ${opacity()}`)
+}
+
 class Routes extends Component {
 
   componentDidMount = () => {
@@ -13,11 +23,12 @@ class Routes extends Component {
     const section = this.props.history.location.pathname.slice(1)
     const idx = links.indexOf(section)
     if (idx > -1) this.props.scrollTo(idx)
+    window.addEventListener(`scroll`, () => filter())
   }
 
   render() {
     return (
-      <div className="routes">
+      <div id="routes">
         <About />
         <Code />
         <Music />
