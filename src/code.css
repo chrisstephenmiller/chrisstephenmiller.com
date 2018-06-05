@@ -1,0 +1,16 @@
+.guitars {
+  height: 350px;
+  width: 350px;
+}
+
+.jam-session {
+  height: 350px;
+  width: 350px;
+}
+
+.projects {
+  z-index: 1;
+  display: inline-flex;
+  margin: 20px 140px;
+  justify-content: space-between;
+}
