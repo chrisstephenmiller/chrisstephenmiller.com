@@ -1,7 +1,12 @@
 {
-  "main.css": "static/css/main.93f20318.css",
-  "main.css.map": "static/css/main.93f20318.css.map",
-  "main.js": "static/js/main.55f5da6e.js",
-  "main.js.map": "static/js/main.55f5da6e.js.map",
-  "static/media/chicago.jpg": "static/media/chicago.ce06def5.jpg"
+  "main.css": "static/css/main.f3c3f67a.css",
+  "main.css.map": "static/css/main.f3c3f67a.css.map",
+  "main.js": "static/js/main.708cc8a7.js",
+  "main.js.map": "static/js/main.708cc8a7.js.map",
+  "static/media/chicago.jpg": "static/media/chicago.ce06def5.jpg",
+  "static/media/dwellplayd.gif": "static/media/dwellplayd.91a130eb.gif",
+  "static/media/github.png": "static/media/github.d1e687f0.png",
+  "static/media/guitars.gif": "static/media/guitars.6fc18306.gif",
+  "static/media/linkedin.svg": "static/media/linkedin.bb3d7f13.svg",
+  "static/media/session.gif": "static/media/session.a795dc6f.gif"
 }
