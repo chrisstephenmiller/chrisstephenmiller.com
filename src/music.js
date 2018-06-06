@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './routes.css'
+import './music.css'
 
 const albums = [
   { name: `whysowhite - whysowhite (2013)`, link: `180341696` },
@@ -11,7 +11,7 @@ class Music extends Component {
   render() {
     return (
       <div className="music route">
-        <span className="title text">These are albums I have played on and/or recorded.</span>
+        <span className="title text">Albums I have played on and/or recorded:</span>
         <div className="albums">
           {albums.map(album => {
             return (

@@ -4,17 +4,28 @@ import guitars from './guitars.gif'
 import jamSession from './session.gif'
 import dwellplayd from './dwellplayd.gif'
 
-
+const projects = [
+  { name: `jam-session`, link: "https://github.com/chrisstephenmiller/jam-session", img: jamSession },
+  { name: `reverb-react-rainbow`, link: "https://chrisstephenmiller.github.io/react-reverb-rainbow/", img: guitars },
+  { name: `dwellplayd`, link: "https://github.com/VCCD/dwellplayd", img: dwellplayd },
+]
 
 class Code extends Component {
   render() {
     return (
       <div className="code route">
-        <span className="title text">This is where I write about code.</span>
+        <span className="title text">Applications I have built and/or contributed to:</span>
         <div className="projects">
-          <img className="jam-session embed" src={jamSession} alt="jam-session"/>
-          <img className="guitars embed" src={guitars} alt="guitars"/>
-          <img className="dwellplayd embed" src={dwellplayd} alt="dwellplayd"/>
+          {projects.map(project => {
+            return (
+              <div className="project">
+                <a href={project.link} target="_blank" ref="noopener">
+                  <img className={`${project.name} embed`} src={project.img} alt={project.name} />
+                </a>
+                <span className="info">{project.name}</span>
+              </div>
+            )
+          })}
         </div>
       </div>
     );

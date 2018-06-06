@@ -1,0 +1,42 @@
+#email {
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+#email:hover {
+  text-shadow: 2px 2px 2px black;
+  transition: all .1s ease;
+}
+
+#contact-info {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linkedin, #github, #resume {
+  border: 1px solid white;
+  height: 50px;
+  width: 175px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  transition: all .2s ease;
+}
+
+#linkedin {
+  transform: translateY(-1px)
+}
+
+#resume {
+  color: black;
+  font-weight: 900;
+  font-size: 42px;
+  text-decoration: none;
+  transform: translateY(-3px);
+  padding: 5px 0;
+}
+
+#linkedin:hover, #github:hover, #resume:hover {
+  box-shadow: 2px 2px 2px black;
+  transition: all .1s ease;
+}

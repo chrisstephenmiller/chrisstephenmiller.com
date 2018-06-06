@@ -10,6 +10,7 @@
   height: 100vh;
   width: 100%;
   justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -42,22 +43,11 @@
   background-color: #695396;
 }
 
-.albums {
-  margin: 20px 140px;
-  display: inline-flex;
-  justify-content: space-between;
-}
-
-.album {
-  display: inline-flex;
-  flex-direction: column;
-  width: 350px;
-}
-
 .embed {
   width: 350px;
   height: 350px;
-  transition: all .2s ease
+  transition: all .2s ease;
+  border: 1px solid white;
 }
 
 .embed:hover {
