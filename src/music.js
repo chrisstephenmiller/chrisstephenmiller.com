@@ -10,7 +10,7 @@ const albums = [
 class Music extends Component {
   render() {
     return (
-      <div className="music route">
+      <div id="music" className="music route">
         <span className="title text">Albums I have played on and/or recorded:</span>
         <div className="albums">
           {albums.map(album => {

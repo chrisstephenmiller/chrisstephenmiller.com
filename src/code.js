@@ -13,12 +13,12 @@ const projects = [
 class Code extends Component {
   render() {
     return (
-      <div className="code route">
+      <div id="code" className="code route">
         <span className="title text">Applications I have built and/or contributed to:</span>
         <div className="projects">
           {projects.map(project => {
             return (
-              <div className="project">
+              <div key={project.name} className="project">
                 <a href={project.link} target="_blank" ref="noopener">
                   <img className={`${project.name} embed`} src={project.img} alt={project.name} />
                 </a>

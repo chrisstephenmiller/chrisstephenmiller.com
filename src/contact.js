@@ -6,17 +6,23 @@ import github from './github.png'
 class Contact extends Component {
   render() {
     return (
-      <div className="contact route">
-        <span className="title text">Feel free to reach out via <a id="email" href="mailto:chris.stephen.miller@gmail.com">email</a> or check me out here:</span>
+      <div id ="contact" className="contact route">
+        <span className="title text">Feel free to reach out via <a id="email" href="mailto:chris.stephen.miller@gmail.com">email</a> or learn more here:</span>
         <div id="contact-info">
-          <a href="https://linkedin.com/in/chrisstephenmiller" target="_blank" rel="noopener">
-            <img id="linkedin" src={linkedin} />
+          <a id="linkedin" href="https://linkedin.com/in/chrisstephenmiller" target="_blank" rel="noopener noreferrer">
+            <div className="contact-btn">
+              <img src={linkedin} alt="linkedin-logo"/>
+            </div>
           </a>
-          <a id="resume" href="resume.pdf" target="_blank" rel="noopener">
-            Resume
+          <a id="resume" href="resume.pdf" target="_blank" rel="noopener noreferrer">
+            <div className="contact-btn">
+              <span>Resume</span>
+            </div>
           </a>
-          <a href="https://github.com/chrisstephenmiller" target="_blank" rel="noopener">
-            <img id="github" src={github} />
+          <a id="github" href="https://github.com/chrisstephenmiller" target="_blank" rel="noopener noreferrer">
+            <div className="contact-btn">
+              <img src={github} alt="github-logo"/>
+            </div>
           </a>
         </div>
       </div>

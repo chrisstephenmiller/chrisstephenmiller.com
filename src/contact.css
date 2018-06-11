@@ -14,17 +14,20 @@
   align-items: center;
 }
 
-#linkedin, #github, #resume {
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid white;
   height: 50px;
-  width: 175px;
-  margin: 0 5px;
-  padding: 5px 10px;
+  width: 180px;
+  margin: 5px;  
   transition: all .2s ease;
 }
 
-#linkedin {
-  transform: translateY(-1px)
+.contact-btn > img {
+  height: 42px;
+  width: 160px;
 }
 
 #resume {
@@ -32,11 +35,9 @@
   font-weight: 900;
   font-size: 42px;
   text-decoration: none;
-  transform: translateY(-3px);
-  padding: 5px 0;
 }
 
-#linkedin:hover, #github:hover, #resume:hover {
+.contact-btn:hover {
   box-shadow: 2px 2px 2px black;
   transition: all .1s ease;
 }
