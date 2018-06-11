@@ -6,9 +6,18 @@ import Navbar from './navbar';
 import Routes from './routes';
 import { BrowserRouter as Router } from 'react-router-dom'
 
-const scrollTo = section => {
-  const scroll = window.innerHeight * (section + 1)
-  window.scrollTo({ top: scroll, behavior: `smooth` })
+const sections = [`about`, `code`, `music`, `contact`]
+
+const scrollToSection = idx => {
+  const sectionHeights = sections.map(section => document.getElementById(section).clientHeight)
+  const scrollDistance = () => {
+    let height = 0;
+    sectionHeights.forEach((sectionHeight, section) => {
+      if (idx >= section) height += sectionHeight
+    })
+    return height
+  }
+  window.scrollTo({ top: scrollDistance(), behavior: `smooth` })
 }
 
 class App extends Component {
@@ -18,8 +27,8 @@ class App extends Component {
         <div className="app">
           <Background />
           <Title />
-          <Navbar scrollTo={scrollTo} />
-          <Routes scrollTo={scrollTo} />
+          <Navbar scrollToSection={scrollToSection} />
+          <Routes scrollToSection={scrollToSection} sections={sections} />
         </div>
       </Router>
     );

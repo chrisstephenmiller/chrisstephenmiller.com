@@ -29,7 +29,7 @@ class Navbar extends Component {
               <Link key={link}
                 to={`/${link}`}
                 id={`${link}-link`}
-                onClick={() => this.props.scrollTo(idx)}>
+                onClick={() => this.props.scrollToSection(idx)}>
                 {link}
               </Link>
             )

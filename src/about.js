@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class About extends Component {
-
-  componentDidMount = () => {
-    console.log(document.getElementById(`about`).clientHeight)
-  }
   render() {
     return (
       <div id="about" className="about route">

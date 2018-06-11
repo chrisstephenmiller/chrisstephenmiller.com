@@ -19,12 +19,9 @@ const scrollOpacity = () => {
 class Routes extends Component {
 
   componentDidMount = () => {
-    const links = [`about`, `code`, `music`, `contact`]
-    const heights = links.map(link => document.getElementById(link).clientHeight)
-    console.log(heights)
     const section = this.props.history.location.pathname.slice(1)
-    const idx = links.indexOf(section)
-    if (idx > -1) this.props.scrollTo(idx)
+    const idx = this.props.sections.indexOf(section)
+    if (idx > -1) this.props.scrollToSection(idx)
     window.addEventListener(`scroll`, () => scrollOpacity())
   }
 
