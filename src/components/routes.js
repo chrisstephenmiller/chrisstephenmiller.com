@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router'
+
 import './css/routes.css'
+
 import About from './about';
 import Code from './code';
 import Music from './music';
 import Contact from './contact';
-import { withRouter } from 'react-router'
 
 class Routes extends Component {
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './css/title.css';
 import { withRouter } from 'react-router'
+
+import './css/title.css';
 
 class Title extends Component {
 

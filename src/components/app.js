@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom'
+
 import './css/app.css';
+
 import Background from './background'
 import Title from './title'
 import Navbar from './navbar';
 import Routes from './routes';
-import { BrowserRouter as Router } from 'react-router-dom'
 
 const sections = [`about`, `code`, `music`, `contact`]
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import './css/code.css'
+
 import guitars from './assets/guitars.gif'
 import jamSession from './assets/session.gif'
 import dwellplayd from './assets/dwellplayd.gif'
