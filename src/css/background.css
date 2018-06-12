@@ -1,11 +1,7 @@
-.app {
-  font-family: 'Cabin';
-}
-
 #chicago {
   position: fixed;
   left: 0;
   display: block;
   height: 100vh;
-  min-height: 600px;
+  min-height: 600px
 }

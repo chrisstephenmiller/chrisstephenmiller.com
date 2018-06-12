@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './music.css'
+import './css/music.css'
 
 const albums = [
   { name: `whysowhite - whysowhite (2013)`, link: `180341696` },

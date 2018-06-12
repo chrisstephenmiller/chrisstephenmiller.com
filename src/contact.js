@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './contact.css'
-import linkedin from './linkedin.svg'
-import github from './github.png'
+import './css/contact.css'
+import linkedin from './assets/linkedin.svg'
+import github from './assets/github.png'
 
 class Contact extends Component {
   render() {

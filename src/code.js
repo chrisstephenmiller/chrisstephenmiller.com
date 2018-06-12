@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './code.css'
-import guitars from './guitars.gif'
-import jamSession from './session.gif'
-import dwellplayd from './dwellplayd.gif'
+import './css/code.css'
+import guitars from './assets/guitars.gif'
+import jamSession from './assets/session.gif'
+import dwellplayd from './assets/dwellplayd.gif'
 
 const projects = [
   { name: `jam-session`, link: "https://github.com/chrisstephenmiller/jam-session", img: jamSession },

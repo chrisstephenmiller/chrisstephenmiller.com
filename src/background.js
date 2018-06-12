@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import chicagoImg from './chicago.jpg'
+import chicagoImg from './assets/chicago.jpg'
+import './css/background.css'
 
 const filter = () => {
   const chicago = document.getElementById(`chicago`)
@@ -15,7 +16,8 @@ class Background extends Component {
         <img
           src={chicagoImg}
           alt="chicago"
-          id="chicago" />
+          id="chicago"
+          />
       </div>
     );
   }
