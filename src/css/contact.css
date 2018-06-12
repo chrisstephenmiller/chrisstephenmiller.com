@@ -14,6 +14,13 @@
   align-items: center;
 }
 
+#resume {
+  color: black;
+  font-weight: 900;
+  font-size: 42px;
+  text-decoration: none;
+}
+
 .contact-btn {
   display: flex;
   justify-content: center;
@@ -21,20 +28,13 @@
   border: 1px solid white;
   height: 50px;
   width: 180px;
-  margin: 5px;  
+  margin: 5px;
   transition: all .2s ease;
 }
 
 .contact-btn > img {
   height: 42px;
   width: 160px;
-}
-
-#resume {
-  color: black;
-  font-weight: 900;
-  font-size: 42px;
-  text-decoration: none;
 }
 
 .contact-btn:hover {

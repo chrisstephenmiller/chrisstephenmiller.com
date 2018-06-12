@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import './css/app.css';
+import '../css/app.css';
 
 import Background from './background'
-import Title from './title'
+import Name from './name'
 import Navbar from './navbar';
 import Routes from './routes';
 
@@ -16,7 +16,7 @@ class App extends Component {
       <Router>
         <div className="app">
           <Background />
-          <Title />
+          <Name />
           <Navbar sections={sections} />
           <Routes sections={sections} />
         </div>

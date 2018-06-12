@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import chicagoImg from './assets/chicago.jpg'
-import './css/background.css'
+import chicagoImg from '../assets/chicago.jpg'
+import '../css/background.css'
 
 const filter = () => {
   const chicago = document.getElementById(`chicago`)

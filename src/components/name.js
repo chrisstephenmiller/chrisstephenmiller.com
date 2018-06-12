@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router'
 
-import './css/title.css';
+import '../css/name.css';
 
-class Title extends Component {
+class Name extends Component {
 
   componentDidMount = () => {
     const name = document.getElementById(`name`).classList
@@ -18,11 +18,9 @@ class Title extends Component {
 
   render() {
     return (
-      <div id="title">
-        <span id="name"  className="hidden">chris stephen miller</span>
-      </div>
+        <span id="name" className="hidden">chris stephen miller</span>
     );
   }
 }
 
-export default withRouter(Title);
+export default withRouter(Name);

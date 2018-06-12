@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-import './css/contact.css'
+import '../css/contact.css'
 
-import linkedin from './assets/linkedin.svg'
-import github from './assets/github.png'
+import linkedin from '../assets/linkedin.svg'
+import github from '../assets/github.png'
 
 class Contact extends Component {
   render() {
     return (
-      <div id ="contact" className="contact route">
+      <div id ="contact" className="route">
         <span className="title text">Feel free to reach out via <a id="email" href="mailto:chris.stephen.miller@gmail.com">email</a> or learn more here:</span>
         <div id="contact-info">
           <a id="linkedin" href="https://linkedin.com/in/chrisstephenmiller" target="_blank" rel="noopener noreferrer">

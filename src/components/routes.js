@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router'
 
-import './css/routes.css'
+import '../css/routes.css'
 
 import About from './about';
 import Code from './code';

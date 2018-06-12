@@ -10,42 +10,25 @@
   min-height: 100vh;
   width: 100%;
   justify-content: center;
-  align-content: center;
   text-align: center;
 }
 
 .text {
   color: white;
-  margin: 20px 160px;
 }
 
 .title {
   font-size: 42px;
 }
 
-.detail {
+.info {
   font-size: 24px;
-}
-
-.about.route {
-  background-color: #579660
-}
-
-.code.route {
-  background-color: #ad3f60
-}
-
-.music.route {
-  background-color: #3b76b4
-}
-
-.contact.route {
-  background-color: #695396;
+  margin: 5px;
 }
 
 .embed {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   transition: all .2s ease;
   border: 1px solid white;
 }
@@ -55,8 +38,18 @@
   transition: all .1s ease
 }
 
-.info {
-  color: white;
-  font-size: 24px;
-  margin: 10px;
+#about {
+  background-color: #579660
+}
+
+#code {
+  background-color: #ad3f60
+}
+
+#music {
+  background-color: #3b76b4
+}
+
+#contact {
+  background-color: #695396;
 }

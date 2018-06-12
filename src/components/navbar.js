@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
-import './css/navbar.css';
+import '../css/navbar.css';
 
 class Navbar extends Component {
 

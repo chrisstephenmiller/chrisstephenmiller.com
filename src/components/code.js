@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import './css/code.css'
+import '../css/code.css'
 
-import guitars from './assets/guitars.gif'
-import jamSession from './assets/session.gif'
-import dwellplayd from './assets/dwellplayd.gif'
+import guitars from '../assets/guitars.gif'
+import jamSession from '../assets/session.gif'
+import dwellplayd from '../assets/dwellplayd.gif'
 
 const projects = [
   { name: `jam-session`, link: "https://github.com/chrisstephenmiller/jam-session", img: jamSession },
@@ -15,7 +15,7 @@ const projects = [
 class Code extends Component {
   render() {
     return (
-      <div id="code" className="code route">
+      <div id="code" className="route">
         <span className="title text">Applications I have built and/or contributed to:</span>
         <div className="projects">
           {projects.map(project => {
@@ -24,7 +24,7 @@ class Code extends Component {
                 <a href={project.link} target="_blank" ref="noopener">
                   <img className={`${project.name} embed`} src={project.img} alt={project.name} />
                 </a>
-                <span className="info">{project.name}</span>
+                <span className="info text">{project.name}</span>
               </div>
             )
           })}

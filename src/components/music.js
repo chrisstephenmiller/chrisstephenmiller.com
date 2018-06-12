@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './css/music.css'
+import '../css/music.css'
 
 const albums = [
   { name: `whysowhite - whysowhite (2013)`, link: `180341696` },
@@ -11,7 +11,7 @@ const albums = [
 class Music extends Component {
   render() {
     return (
-      <div id="music" className="music route">
+      <div id="music" className="route">
         <span className="title text">Albums I have played on and/or recorded:</span>
         <div className="albums">
           {albums.map(album => {
@@ -25,7 +25,7 @@ class Music extends Component {
                   seamless
                   frameBorder="0"
                 />
-                <span className="info">{album.name}</span>
+                <span className="info text">{album.name}</span>
               </div>
             )
           })}
