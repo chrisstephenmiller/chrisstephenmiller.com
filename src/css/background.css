@@ -1,6 +1,6 @@
 #chicago {
   position: fixed;
-  left: 0;
+  right: 0;
   display: block;
   height: 100vh;
   min-height: 600px

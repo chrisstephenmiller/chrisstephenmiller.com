@@ -4,7 +4,7 @@ import '../css/background.css'
 
 const filter = () => {
   const chicago = document.getElementById(`chicago`)
-  const blur = window.scrollY ** 1.1 / 500
+  const blur = window.scrollY ** 1.2 / 500
   chicago.setAttribute(`style`, `filter: blur(${blur}px)`)
 }
 
