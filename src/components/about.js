@@ -5,7 +5,7 @@ class About extends Component {
     return (
       <div id="about" className="route">
           <span className="title text">I am a web developer and audio engineer living in Chicago, Illinois.</span>
-          <span className="info text">detail</span>
+          <span className="subtitle text">This is a subtitle.</span>
       </div>
     );
   }
