@@ -3,20 +3,25 @@ import './navbar.css';
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
-const links = [`about`, `code`, `music`, `contact`]
-
 class Navbar extends Component {
+
+  scrollToSection = idx => {
+    const sectionTops = this.props.sections.map(section => document.getElementById(section).offsetTop + window.innerHeight)
+    window.scrollTo({ top: sectionTops[idx], behavior: `smooth` })
+  }
 
   componentDidMount = () => {
     setTimeout(() => document.getElementById(`navbar`).classList.remove(`hidden`), 500)
-    this.sections = links.map(e => document.getElementById(`${e}-link`).classList)
-    window.addEventListener(`scroll`, () => this.sectionScroller())
+    window.addEventListener(`scroll`, () => this.navHighlight())
   }
 
-  sectionScroller = () => {
-    this.sections.forEach((e, idx)=> {
-      const lower = window.innerHeight * (idx + 1) - (29 * idx + 35)
-      const upper = window.innerHeight * (idx + 2) - (29 * (idx + 1) + 5)
+  navHighlight = () => {
+    const { sections } = this.props
+    const sectionTops = this.props.sections.map(section => document.getElementById(section).offsetTop + window.innerHeight)
+    const sectionLinks = sections.map(e => document.getElementById(`${e}-link`).classList)
+    sectionLinks.forEach((e, idx) => {
+      const lower = sectionTops[idx] - (29 * (idx + 1) + 5)
+      const upper = sectionTops[idx + 1] ? sectionTops[idx + 1] - (29 * (idx + 1) + 5) : Infinity
       window.scrollY >= lower && window.scrollY < upper ? e.add(`active`) : e.remove(`active`)
     })
   }
@@ -24,16 +29,16 @@ class Navbar extends Component {
   render() {
     return (
       <div id="navbar" className="hidden">
-          {links.map((link, idx) => {
-            return (
-              <Link key={link}
-                to={`/${link}`}
-                id={`${link}-link`}
-                onClick={() => this.props.scrollToSection(idx)}>
-                {link}
-              </Link>
-            )
-          })}
+        {this.props.sections.map((link, idx) => {
+          return (
+            <Link key={link}
+              to={`/${link}`}
+              id={`${link}-link`}
+              onClick={() => this.scrollToSection(idx)}>
+              {link}
+            </Link>
+          )
+        })}
       </div>
     );
   }

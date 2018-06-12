@@ -10,28 +10,32 @@ const scrollOpacity = () => {
   const routes = document.getElementById(`routes`)
   const opacity = () => {
     const value = window.scrollY / window.innerHeight
-    if (value > .8) return .8
-    return value
+    return value < .8 ? value : .8
   }
   routes.setAttribute(`style`, `opacity: ${opacity()}`)
 }
 
 class Routes extends Component {
 
+  jumpToSection = idx => {
+    const sectionHeights = this.props.sections.map(section => document.getElementById(section).offsetTop + window.innerHeight)
+    window.scrollTo({ top: sectionHeights[idx] })
+  }
+
   componentDidMount = () => {
-    const section = this.props.history.location.pathname.slice(1)
-    const idx = this.props.sections.indexOf(section)
-    if (idx > -1) this.props.scrollToSection(idx)
+    const { history, sections } = this.props
+    const sectionPath = sections.indexOf(history.location.pathname.slice(1))
+    if (sectionPath > -1) this.jumpToSection(sectionPath)
     window.addEventListener(`scroll`, () => scrollOpacity())
   }
 
   render() {
     return (
       <div id="routes">
-        <About/>
-        <Code/>
-        <Music/>
-        <Contact/>
+        <About />
+        <Code />
+        <Music />
+        <Contact />
       </div>
     );
   }
