@@ -27,13 +27,15 @@
 
 .subtitle {
   font-size: 24px;
-  margin: 5px 0px;
+  margin: 10px 0px;
 }
 
 .info {
   font-size: 18px;
   font-style: oblique;
-  margin: 5px 5px;
+  margin: 0 10px;
+  text-align: left;
+  white-space: pre-wrap;
 }
 
 #about {
