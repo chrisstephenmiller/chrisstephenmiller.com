@@ -4,17 +4,17 @@ const projects = [
   {
     name: `whysowhite - whysowhite (2013)`,
     link: `180341696`,
-    text: `this is a short description`
+    text: `this is a short description, no more than a few lines.`
   },
   {
     name: `the positive vibration high frequency calibration sequencer - whysowhite (2015)`,
     link: `2188654707`,
-    text: `this is a medium description. there is a some stuff to discuss here and it will take up a good amount of space.`
+    text: `this is a medium description. there will be more than a few lines and some details included about the project.`
   },
   {
     name: `Scary Blankets - Mungion (2016)`,
     link: `4001214234`,
-    text: `this is a long description. there will be numerous things to list and it will take up a lot of space, so much so that I might want to consider trimming it, considering there isn't a ton of real estate here.`
+    text: `this is a long description. there will be a number of lines, significant details, and extra information. it will take up much more real estate than the other descriptions.`
   },
 ]
 

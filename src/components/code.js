@@ -9,19 +9,19 @@ const projects = [
     name: `jam-session`,
     link: "https://github.com/chrisstephenmiller/jam-session",
     img: jamSession,
-    text: `this is a short description.`
+    text: `this is a short description, no more than a few lines.`
   },
   {
     name: `reverb-react-rainbow`,
     link: "https://chrisstephenmiller.github.io/react-reverb-rainbow/",
     img: guitars,
-    text: `this is a medium description. there is a some stuff to discuss here and it will take up a good amount of space.`
+    text: `this is a medium description. there will be more than a few lines and some details included about the project.`
   },
   {
     name: `dwellplayd`,
     link: "https://github.com/VCCD/dwellplayd",
     img: dwellplayd,
-    text: `this is a long description. there will be numerous things to list and it will take up a lot of space, so much so that I might want to consider trimming it, considering there isn't a ton of real estate here.`
+    text: `this is a long description. there will be a number of lines, significant details, and extra information. it will take up much more real estate than the other descriptions.`
   },
 ]
 
