@@ -15,7 +15,7 @@ class Name extends Component {
     const { sections } = this.props
     const name = document.getElementById(`name`).classList
     const sectionHeights = sections.map(section => document.getElementById(section).offsetTop + window.innerHeight)
-    window.scrollY >= sectionHeights[0] && window.scrollY <= sectionHeights[sectionHeights.length - 1] - 100 ? name.add(`hidden`) : name.remove(`hidden`)
+    window.scrollY >= sectionHeights[0] + 50 && window.scrollY <= sectionHeights[sectionHeights.length - 1] - 100 ? name.add(`hidden`) : name.remove(`hidden`)
   }
 
   render() {
