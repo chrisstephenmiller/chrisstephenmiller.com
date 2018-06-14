@@ -4,7 +4,7 @@
 }
 
 #email:hover {
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
   transition: all .1s ease;
 }
 

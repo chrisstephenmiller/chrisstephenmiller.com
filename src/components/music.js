@@ -4,11 +4,14 @@ const projects = [
   {
     name: `whysowhite - whysowhite (2013)`,
     link: `180341696`,
-    text: `recorded and mixed by chris stephen miller
+    text: `released February 8, 2013 
+written and performed by whysowhite
+ 
+recorded and mixed by chris stephen miller
 additional recording by steve rashid
 mastered by tom tierney
 artwork by devin soisson
-    
+ 
 big nick — vocals 
 charlie moonbeam — vocals 
 d-pop fantastic — vocals, congas 
@@ -20,12 +23,15 @@ brahmz — percussion
 the shef — keys, vocals`
   },
   {
-    name: `the positive vibration high frequency calibration sequencer - whysowhite (2015)`,
+    name: `the positive vibration high frequency calibration sequencer - whysowhite`,
     link: `2188654707`,
-    text: `recorded and mixed by chris stephen miller
+    text: `released august 7, 2015
+written and performed by whysowhite
+ 
+recorded and mixed by chris stephen miller
 mastered by rick fritz
 artwork by dav yendler
-    
+ 
 nick mcmillan — vocals, percussion
 davis haines — vocals, percussion
 charles haines — vocals
@@ -38,13 +44,17 @@ hannah shefsky — keys, vocals
 sir jove — vocals`
   },
   {
-    name: `scary blankets - mungion (2016)`,
+    name: `scary blankets - mungion`,
     link: `4001214234`,
-    text: `recorded and mixed by chris stephen miller
+    text: `released june 21st, 2016
+produced by mungion
+ 
+recorded and mixed by chris stephen miller
 additional recording by matt jordan
+additional recording by robert rashid
 mastered by rick fritz 
 artwork by russell moore and tiffany vedua 
-        
+ 
 justin reckamp — guitar, vox
 joe re — organ, synth, piano, vox
 sean carolan — upright, electric bass, vox
