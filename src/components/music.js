@@ -12,15 +12,16 @@ additional recording by steve rashid
 mastered by tom tierney
 artwork by devin soisson
  
-big nick — vocals 
-charlie moonbeam — vocals 
-d-pop fantastic — vocals, congas 
-dngr — lead guitar 
-uncle funk — rhythm guitar 
-custom sumberg — bass 
-fatphlams levine — drums 
-brahmz — percussion 
-the shef — keys, vocals`
+nick mcmillan — vocals 
+charles haines — vocals 
+davis haines — vocals, congas 
+chris miller — lead guitar 
+charlie dwyer — rhythm guitar 
+dave sumberg — bass 
+zack levine — drums 
+andrew abramowitz — percussion 
+hannah shefsky — keys, vocals
+sir jove — vocals`
   },
   {
     name: `the positive vibration high frequency calibration sequencer - whysowhite`,
