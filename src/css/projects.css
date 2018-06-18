@@ -1,6 +1,7 @@
 .projects {
   display: inline-flex;
   justify-content: center;
+  margin: 0 20px 20px; 
 }
 
 .project {

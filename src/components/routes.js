@@ -19,7 +19,7 @@ class Routes extends Component {
   }
 
   scrollOpacity = () => {
-    const opacity = Math.min(window.scrollY / window.innerHeight, .8)
+    const opacity = Math.min(window.scrollY / window.innerHeight, .75)
     document.getElementById(`routes`).setAttribute(`style`, `opacity: ${opacity}`)
   }
 

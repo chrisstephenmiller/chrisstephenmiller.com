@@ -1,3 +1,7 @@
+#about > span {
+  margin: 10px 140px;
+}
+
 .about-info-link {
   text-decoration: none;
   color:blue;

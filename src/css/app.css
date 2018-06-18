@@ -5,3 +5,14 @@ body {
 .app {
   font-family: 'Cabin';
 }
+
+.link {
+  text-decoration: none;
+  color:blue;
+  transition: all .2s ease;
+}
+
+.link:hover {
+  text-shadow: 1px 1px 1px black;
+  transition: all .1s ease;
+}

@@ -2,7 +2,7 @@
   position: absolute;
   top: 100vh;
   width: 100%;
-  min-width: 1100px;
+  /* min-width: 1100px; */
 }
 
 .route {
@@ -10,7 +10,6 @@
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  padding: 0 140px;
   box-sizing: border-box;
   justify-content: center;
   text-align: center;

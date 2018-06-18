@@ -81,7 +81,7 @@ class Music extends Component {
                   frameBorder="0"
                 />
                 <span className="subtitle text">{project.name}</span>
-                {project.text.split(`\n`).map(line => <span key={line} className="info text">{line}</span>)}
+                <span className="info text">{project.text}</span>
               </div>
             )
           })}

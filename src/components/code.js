@@ -3,25 +3,61 @@ import React, { Component } from 'react'
 import guitars from '../assets/guitars.gif'
 import jamSession from '../assets/session.gif'
 import dwellplayd from '../assets/dwellplayd.gif'
+import github from '../assets/github.png'
 
 const projects = [
   {
-    name: `jam-session`,
-    link: "https://github.com/chrisstephenmiller/jam-session",
+    name: `Jam.Sockets`,
+    link: `http://www.jamsockets.com`,
+    github: `https://github.com/chrisstephenmiller/jam-session`,
     img: jamSession,
-    text: `this is a short description, no more than a few lines.`
+    text: `Jam.Sockets is a web app that provides a platform for users to componse and perform music simultaneously.
+    
+Built with: 
+
+— React
+— Redux
+— Node.JS
+— Express
+— Socket.IO
+— WebAudio/WebMIDI
+
+`
   },
   {
-    name: `reverb-react-rainbow`,
-    link: "https://chrisstephenmiller.github.io/react-reverb-rainbow/",
+    name: `Reverb Rainbow`,
+    link: `https://chrisstephenmiller.github.io/react-reverb-rainbow/`,
+    github: `https://github.com/chrisstephenmiller/react-reverb-rainbow`,
     img: guitars,
-    text: `this is a medium description. there will be more than a few lines and some details included about the project.`
+    text: `Reverb Rainbow is a front-end interface designed to bring a more colorful browing experience to Reverb.com's electric guitar colletion.
+        
+Built with: 
+
+— React
+— Node.JS
+— Express
+— Sequelize
+— PostgreSQL
+
+`
   },
   {
     name: `dwellplayd`,
-    link: "https://github.com/VCCD/dwellplayd",
+    link: `http://www.dwellplayd.com`,
+    github: `https://github.com/VCCD/dwellplayd`,
     img: dwellplayd,
-    text: `this is a long description. there will be a number of lines, significant details, and extra information. it will take up much more real estate than the other descriptions.`
+    text: `dwellplayd is a mobile app designed to gamify and incentivize completing communal tasks in a shared living space.
+    
+Built with: 
+
+— React Native
+— Redux
+— Node.JS
+— Express
+— Sequelize
+— PostgreSQL
+
+`
   },
 ]
 
@@ -34,11 +70,16 @@ class Code extends Component {
           {projects.map(project => {
             return (
               <div key={project.name} className="project">
-                <a href={project.link} target="_blank" ref="noopener">
+                <a href={project.link} target="_blank" ref="noopener noreferrer">
                   <img className={`${project.name} embed`} src={project.img} alt={project.name} />
                 </a>
                 <span className="subtitle text">{project.name}</span>
                 <span className="info text">{project.text}</span>
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <div className="contact-btn">
+                  <img src={github} alt="github-logo"/>
+                </div>
+                </a>
               </div>
             )
           })}
