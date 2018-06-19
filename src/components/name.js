@@ -7,7 +7,8 @@ class Name extends Component {
 
   componentDidMount = () => {
     const name = document.getElementById(`name`).classList
-    if (window.scrollY < window.innerHeight) setTimeout(() => name.remove(`hidden`), 500)
+    const root = this.props.history.location.pathname.slice(1) === ''
+    if (window.scrollY < window.innerHeight && root) setTimeout(() => name.remove(`hidden`), 500)
     window.addEventListener(`scroll`, () => this.nameHider())
   }
 
@@ -20,7 +21,7 @@ class Name extends Component {
 
   render() {
     return (
-        <span id="name" className="hidden">chris stephen miller</span>
+      <span id="name" className="hidden">chris stephen miller</span>
     );
   }
 }
