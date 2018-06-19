@@ -32,7 +32,7 @@ class Navbar extends Component {
         {this.props.sections.map((link, idx) => {
           return (
             <Link key={link}
-              to={`${process.env.PUBLIC_URL}/${link}`}
+              to={`${link}`}
               id={`${link}-link`}
               onClick={() => this.scrollToSection(idx)}>
               {link}
