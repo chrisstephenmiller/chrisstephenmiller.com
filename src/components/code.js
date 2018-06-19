@@ -12,7 +12,9 @@ const projects = [
     github: `https://github.com/chrisstephenmiller/jam-session`,
     img: jamSession,
     text: `Jam.Sockets is a web app that provides a platform for users to componse and perform music simultaneously.
-    
+
+Winner - Fullstack Academy Stackathon
+
 Built with: 
 
 — React
@@ -56,6 +58,7 @@ Built with:
 — Express
 — Sequelize
 — PostgreSQL
+— D3/Victory.JS
 
 `
   },
