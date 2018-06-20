@@ -31,7 +31,7 @@ Built with:
     link: `https://chrisstephenmiller.github.io/react-reverb-rainbow/`,
     github: `https://github.com/chrisstephenmiller/react-reverb-rainbow`,
     img: guitars,
-    text: `Reverb Rainbow is a front-end interface designed to bring a more colorful browing experience to Reverb.com's electric guitar colletion.
+    text: `Reverb Rainbow is a front-end interface designed to bring a more colorful browsing experience to Reverb.com's electric guitar collection.
         
 Built with: 
 
