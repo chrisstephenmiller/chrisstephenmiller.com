@@ -11,6 +11,7 @@ import Routes from './routes';
 const sections = [`about`, `code`, `music`, `contact`]
 
 class App extends Component {
+
   render() {
     return (
       <Router>
