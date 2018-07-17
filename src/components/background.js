@@ -2,28 +2,25 @@ import React, { Component } from 'react';
 import chicagoImg from '../assets/chicago.jpg'
 import '../css/background.css'
 
-const filter = () => {
+const blur = () => {
   const chicago = document.getElementById(`chicago`)
   const blur = (window.scrollY + 500) ** 1.05 / 500
   chicago.setAttribute(`style`, `filter: blur(${blur}px)`)
 }
 
-const backgroundOpacity = () => {
-  const opacity = Math.min(window.scrollY / window.innerHeight, .70)
-  document.getElementById(`overlay`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[4]}, ${opacity}), rgb(${colors[0]}, ${opacity}))`)
-  document.getElementById(`about`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[0]}, ${opacity}), rgb(${colors[1]}, ${opacity}))`)
-  document.getElementById(`code`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[1]}, ${opacity}), rgb(${colors[2]}, ${opacity}))`)
-  document.getElementById(`music`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[2]}, ${opacity}), rgb(${colors[3]}, ${opacity}))`)
-  document.getElementById(`contact`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[3]}, ${opacity}), rgb(${colors[4]}, ${opacity}))`)
+const colorOpacity = sections => {
+  const colors = [`4, 75, 127`, `226, 137, 4`, `149, 25, 12`, `97, 3, 69`, `16, 126, 125`]
+  const opacity = Math.min(window.scrollY / (1.5 * window.innerHeight), .70)
+  sections.forEach((section, idx) => document.getElementById(section).setAttribute(`style`, `background: linear-gradient(rgb(${colors[idx]}, ${opacity}), rgb(${colors[(idx + 1) % colors.length]}, ${opacity}))`))
 }
 
-const colors = [`229, 111, 0`, `200, 81, 0`, `199, 0, 101`, `99, 0, 190`, `0, 92, 189`]
 
 class Background extends Component {
 
   render() {
-    window.addEventListener(`scroll`, () => filter())
-    window.addEventListener(`scroll`, () => backgroundOpacity())
+    const sections = [`overlay`, ...this.props.sections]
+    window.addEventListener(`scroll`, blur)
+    window.addEventListener(`scroll`, () => colorOpacity(sections))
     return (
       <div className="background">
         <div id="overlay">

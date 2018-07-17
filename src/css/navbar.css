@@ -18,7 +18,7 @@
   font-size: 24px;
   color: white;
   text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
   transition: all .2s ease;
 }
 
@@ -28,17 +28,17 @@
 }
 
 #about-link:hover, #about-link.active {
-  color: #95190c
+  color: rgb(226, 137, 4)
 }
 
 #code-link:hover, #code-link.active {
-  color: #107e7d
+  color: rgb(149, 25, 12)
 }
 
 #music-link:hover, #music-link.active {
-  color: #e28904
+  color: rgb(97, 3, 69)
 }
 
 #contact-link:hover, #contact-link.active {
-  color: #610345
+  color: rgb(16, 126, 125)
 }

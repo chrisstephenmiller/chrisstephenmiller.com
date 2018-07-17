@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-          <Background />
+          <Background sections={sections}/>
           <Name sections={sections} />
           <Navbar sections={sections} />
           <Routes sections={sections} />
