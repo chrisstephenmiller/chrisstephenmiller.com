@@ -4,34 +4,26 @@ import '../css/background.css'
 
 const filter = () => {
   const chicago = document.getElementById(`chicago`)
-  const blur = window.scrollY ** 1.2 / 500
+  const blur = (window.scrollY + 500) ** 1.05 / 500
   chicago.setAttribute(`style`, `filter: blur(${blur}px)`)
 }
 
-const scrollOpacity = () => {
-  const opacity = Math.min(window.scrollY / window.innerHeight, .75)
-  document.getElementById(`overlay`).setAttribute(`style`, `opacity: ${opacity}; background: linear-gradient(#${colors[0]}, #${colors[1]}, #${colors[2]})`)
+const backgroundOpacity = () => {
+  const opacity = Math.min(window.scrollY / window.innerHeight, .70)
+  document.getElementById(`overlay`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[4]}, ${opacity}), rgb(${colors[0]}, ${opacity}))`)
+  document.getElementById(`about`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[0]}, ${opacity}), rgb(${colors[1]}, ${opacity}))`)
+  document.getElementById(`code`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[1]}, ${opacity}), rgb(${colors[2]}, ${opacity}))`)
+  document.getElementById(`music`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[2]}, ${opacity}), rgb(${colors[3]}, ${opacity}))`)
+  document.getElementById(`contact`).setAttribute(`style`, `background: linear-gradient(rgb(${colors[3]}, ${opacity}), rgb(${colors[4]}, ${opacity}))`)
 }
 
-const colors = `000000-e28904-95190c-610345-107e7d-044b7f`.split(`-`)
-
-const setColors = () => {
-  document.getElementById(`overlay`).setAttribute(`style`, `background: linear-gradient(#${colors[0]}, #${colors[1]}, #${colors[2]})`)
-  document.getElementById(`about`).setAttribute(`style`, `background: linear-gradient(#${colors[2]}, #${colors[3]}, #${colors[4]})`)
-  document.getElementById(`code`).setAttribute(`style`, `background: linear-gradient(#${colors[4]}, #${colors[5]}, #${colors[1]})`)
-  document.getElementById(`music`).setAttribute(`style`, `background: linear-gradient(#${colors[1]}, #${colors[2]}, #${colors[3]})`)
-  document.getElementById(`contact`).setAttribute(`style`, `background: linear-gradient(#${colors[3]}, #${colors[4]}, #${colors[5]})`)
-}
+const colors = [`229, 111, 0`, `200, 81, 0`, `199, 0, 101`, `99, 0, 190`, `0, 92, 189`]
 
 class Background extends Component {
 
-  componentDidMount = () => {
-    setColors()
-  }
-
   render() {
     window.addEventListener(`scroll`, () => filter())
-    window.addEventListener(`scroll`, () => scrollOpacity())
+    window.addEventListener(`scroll`, () => backgroundOpacity())
     return (
       <div className="background">
         <div id="overlay">

@@ -18,14 +18,14 @@ class Routes extends Component {
     if (sectionPath > -1) window.scrollTo({ top: sectionHeights[sectionPath] })
   }
 
-  scrollOpacity = () => {
-    const opacity = Math.min(window.scrollY / window.innerHeight, .75)
-    document.getElementById(`routes`).setAttribute(`style`, `opacity: ${opacity}`)
-  }
+  // scrollOpacity = () => {
+  //   const opacity = Math.min(window.scrollY / window.innerHeight, .80)
+  //   document.getElementById(`routes`).setAttribute(`style`, `opacity: ${opacity}`)
+  // }
 
   componentDidMount = () => {
     this.jumpToSection()
-    window.addEventListener(`scroll`, () => this.scrollOpacity())
+    // window.addEventListener(`scroll`, () => this.scrollOpacity())
   }
 
   render() {
