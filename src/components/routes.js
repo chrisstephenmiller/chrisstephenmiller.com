@@ -26,6 +26,7 @@ class Routes extends Component {
   componentDidMount = () => {
     this.jumpToSection()
     // window.addEventListener(`scroll`, () => this.scrollOpacity())
+    if (this.props.location.pathname === `/reverb-rainbow`) window.location.replace("https://chrisstephenmiller.github.io/react-reverb-rainbow/")
   }
 
   render() {
