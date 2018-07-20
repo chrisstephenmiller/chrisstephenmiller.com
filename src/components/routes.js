@@ -18,15 +18,8 @@ class Routes extends Component {
     if (sectionPath > -1) window.scrollTo({ top: sectionHeights[sectionPath] })
   }
 
-  // scrollOpacity = () => {
-  //   const opacity = Math.min(window.scrollY / window.innerHeight, .80)
-  //   document.getElementById(`routes`).setAttribute(`style`, `opacity: ${opacity}`)
-  // }
-
   componentDidMount = () => {
     this.jumpToSection()
-    // window.addEventListener(`scroll`, () => this.scrollOpacity())
-    if (this.props.location.pathname === `/reverb-rainbow`) window.location.replace("https://chrisstephenmiller.github.io/react-reverb-rainbow/")
   }
 
   render() {
