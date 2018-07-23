@@ -16,7 +16,7 @@ class Contact extends Component {
               <img src={linkedin} alt="linkedin-logo"/>
             </div>
           </a>
-          <a id="resume" href="resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a id="resume" href="Chris Miller - Resume.pdf" target="_blank" rel="noopener noreferrer" download>
             <div className="contact-btn">
               <span>Resume</span>
             </div>
